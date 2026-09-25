@@ -1,0 +1,37 @@
+[
+    {
+        "id": "P001",
+        "name": "Single Limit Switches",
+        "category": "Limit Switches",
+        "description": "Reliable mechanical limit switches for industrial position sensing and control applications.",
+        "image": "/assets/images/limit-switch.jpg"
+    },
+    {
+        "id": "P002",
+        "name": "Inductive Proximity Switches",
+        "category": "Proximity Sensors",
+        "description": "Non-contact sensors designed for reliable detection of metallic objects in industrial environments.",
+        "image": "/assets/images/proximity-sensor.jpg"
+    },
+    {
+        "id": "P003",
+        "name": "Precision Single & Multiple Limit Switches",
+        "category": "Limit Switches",
+        "description": "Precision switching solutions designed for demanding industrial control applications.",
+        "image": "/assets/images/precision-switch.jpg"
+    },
+    {
+        "id": "P004",
+        "name": "Photo Electric Sensors",
+        "category": "Photo Electric Sensors",
+        "description": "Photoelectric sensing solutions for reliable object detection and automation applications.",
+        "image": "/assets/images/photo-sensor.jpg"
+    },
+    {
+        "id": "P005",
+        "name": "NK Limit Switches",
+        "category": "Limit Switches",
+        "description": "Industrial limit switches suitable for machine control and position monitoring applications.",
+        "image": "/assets/images/nk-switch.jpg"
+    }
+]

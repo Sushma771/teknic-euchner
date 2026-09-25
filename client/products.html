@@ -1,0 +1,77 @@
+<main>
+
+    <section class="products-section reveal">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <span class="eyebrow">
+                    PRODUCT CATALOG
+                </span>
+
+                <h1>
+                    Industrial
+                    <span>Products</span>
+                </h1>
+
+                <p>
+                    Explore our industrial control,
+                    sensing and automation products.
+                </p>
+
+            </div>
+
+            <div class="product-controls">
+
+                <div class="search-box">
+
+                    <label for="productSearch">
+                        Search products
+                    </label>
+
+                    <input
+                        type="search"
+                        id="productSearch"
+                        placeholder="Search products..."
+                    >
+
+                </div>
+
+                <div class="filter-box">
+
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+                    <select id="categoryFilter">
+                        <option value="all">
+                            All Categories
+                        </option>
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="product-result-info">
+                <span id="productCount">
+                    Loading products...
+                </span>
+            </div>
+
+            <div
+                id="productGrid"
+                class="product-grid"
+                aria-live="polite"
+            ></div>
+
+        </div>
+
+    </section>
+
+</main>
+<script src="js/api.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/animations.js"></script>
+<script src="js/products.js"></script>

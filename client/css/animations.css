@@ -1,0 +1,244 @@
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fadeUp 0.7s ease forwards;
+}
+
+
+
+
+
+/* Reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-grid,
+    .visual-ring,
+    .node,
+    .hero-eyebrow,
+    .hero h1,
+    .hero p,
+    .hero-actions,
+    .industrial-frame {
+        animation: none !important;
+    }
+
+    .hero-eyebrow,
+    .hero h1,
+    .hero p,
+    .hero-actions,
+    .industrial-frame {
+        opacity: 1;
+    }
+
+}
+/* =========================
+   SCROLL REVEAL
+========================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* Direction variations */
+
+.reveal-left {
+    opacity: 0;
+
+    transform: translateX(-40px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal-left.active {
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+.reveal-right {
+    opacity: 0;
+
+    transform: translateX(40px);
+
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal-right.active {
+    opacity: 1;
+
+    transform: translateX(0);
+}
+
+
+/* Stagger */
+
+.reveal-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.reveal-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.reveal-delay-3 {
+    transition-delay: 0.3s;
+}
+
+/* =========================
+   HERO TECHNOLOGY BACKGROUND
+========================= */
+
+.hero {
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* Grid */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            rgba(255,255,255,0.06) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.06) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        60px 60px;
+
+    opacity: 0.35;
+
+    pointer-events: none;
+}
+
+
+/* Glow */
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -200px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(227, 6, 19, 0.18),
+            transparent 70%
+        );
+
+    animation:
+        heroGlow 8s ease-in-out infinite;
+
+    pointer-events: none;
+}
+
+
+@keyframes heroGlow {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+
+        animation-iteration-count: 1 !important;
+
+        transition-duration: 0.01ms !important;
+
+        scroll-behavior: auto !important;
+    }
+
+    .reveal,
+    .reveal-left,
+    .reveal-right {
+        opacity: 1;
+
+        transform: none;
+    }
+
+
+}
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+
+    .hero-video {
+        display: none;
+    }
+
+    .hero-section {
+        background: #071016;
+    }
+
+}

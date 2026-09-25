@@ -1,0 +1,17 @@
+{
+  "name": "teknic-euchner",
+  "version": "1.0.0",
+  "description": "TEKNIC EUCHNER Full Stack JavaScript Website",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "run": "^2.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "success": true,
+    "data": {
+        "name": "TEKNIC EUCHNER",
+        "title": "Industrial Safety & Automation Solutions",
+        "description": "TEKNIC EUCHNER provides industrial safety, control and automation solutions for demanding industrial applications.",
+        "experience": "Engineering reliable industrial solutions",
+        "mission": "To provide dependable safety and automation solutions that help industries operate efficiently and safely.",
+        "values": [
+            "Safety",
+            "Quality",
+            "Innovation",
+            "Reliability"
+        ]
+    }
+}
